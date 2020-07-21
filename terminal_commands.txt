@@ -1,0 +1,134 @@
+# TMUX
+------------------------------------------------------
+tmux set -g prefix C-a (Sets prefix to Ctrl-a)
+tmux ls
+tmux list-panes -a
+tmux list-window
+
+tmux move-pane -s 3:0
+
+tmux new -s <session_name> (create named session)
+Ctrl+a d (detach from session)
+tmux attach-session -t id/name
+tmux kill-session -t id/name
+
+Ctrl+a " (split horizontally)
+Ctrl+a % (split vertically)
+Ctrl+a arrowKey (move between screens)
+------------------------------------------------------
+
+# LINUX
+------------------------------------------------------
+dpkg -L <packagename> (to find where package is installed)
+pwd (print working directory)
+grep -w <word> * (search all files in directory for word)
+grep -r <word> * (recursively search all directories and subdirectories)
+chown user <filename> (change ownership of file)
+mv <oldfile.txt> <newfile.txt> (rename file) 
+du -s -h <filename> (show the disk usage of a certain folder)
+chmod -R 777 <filename> (give all users permissions to make directories under that directory)
+dd if=/dev/zero of=/dev/sdX bs=1M #replace X with the target drive letter. (wipe a disk by filling it with zeros)
+history (shows all previous commands used)
+dmesg (prints our message buffer of kernel, good for debugging)
+------------------------------------------------------
+
+# NEOVIM
+------------------------------------------------------
+nvim <filename> (open file with neovim)
+:q (quits file)
+:q! (force quit)
+:wq (save and quit)
+:w (save file)
+:<lineNumber> (takes you to line)
+:PlugInstall (installs new plugin)
+Ctrl-w <arrowKey> (switch panes)
+V (select line)
+v (select characters)
+y (yank the selection)
+p (paste on line below)
+P (paste on line above)
+d (cut selections)
+u (undo)
+Ctrl-R (redo)
+gg (go to top of file)
+G (go to EOF)
+0 (go to start of line)
+$ (go to EOL)
+i (go to insert mode from command mode)
+esc (go to command mode from insert mode)
+:set paste (takes you to paste mode)
+	p (paste)
+	shift ins (paste from clipboard into terminal)
+	:set nopaste (leave paste mode)
+
+tmux set -g prefix C-a (Sets prefix to Ctrl-a)
+tmux ls
+tmux list-panes -a
+tmux list-window
+
+tmux move-pane -s 3:0
+
+tmux new -s <session_name> (create named session)
+Ctrl+a d (detach from session)
+tmux attach-session -t id/name
+tmux kill-session -t id/name
+
+Ctrl+a " (split horizontally)
+Ctrl+a % (split vertically)
+Ctrl+a arrowKey (move between screens)
+------------------------------------------------------
+
+# LINUX
+------------------------------------------------------
+dpkg -L <packagename> (to find where package is installed)
+pwd (print working directory)
+grep -w <word> * (search all files in directory for word)
+grep -r <word> * (recursively search all directories and subdirectories)
+chown user <filename> (change ownership of file)
+mv <oldfile.txt> <newfile.txt> (rename file) 
+du -s -h <filename> (show the disk usage of a certain folder)
+chmod -R 777 <filename> (give all users permissions to make directories under that directory)
+dd if=/dev/zero of=/dev/sdX bs=1M #replace X with the target drive letter. (wipe a disk by filling it with zeros)
+history (shows all previous commands used)
+dmesg (prints our message buffer of kernel, good for debugging)
+------------------------------------------------------
+
+# NEOVIM
+------------------------------------------------------
+# Basic
+
+nvim <filename> (open file with neovim)
+:q (quits file)
+:q! (force quit)
+:wq (save and quit)
+:w (save file)
+:w <filename> (save with filename)
+:<lineNumber> (takes you to line)
+:PlugInstall (installs new plugin)
+Ctrl-w <arrowKey> (switch panes)
+V (select line)
+v (select characters)
+y (yank the selection)
+p (paste on line below)
+P (paste on line above)
+d (cut selections)
+u (undo)
+Ctrl-R (redo)
+gg (go to top of file)
+G (go to EOF)
+0 (go to start of line)
+$ (go to EOL)
+i (go to insert mode from command mode)
+esc (go to command mode from insert mode)
+:set paste (takes you to paste mode)
+	p (paste)
+	shift ins (paste from clipboard into terminal)
+	:set nopaste (leave paste mode)
+
+# Navigation
+
+:tab new (open up a new tab)
+:E (explore files in directory to open in vim)
+gt (go to right tab)
+gT (go to left tab)
+
