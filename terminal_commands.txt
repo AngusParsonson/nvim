@@ -36,9 +36,9 @@ cd ~ (go to home dir)
 dpkg -L <packagename> (to find where package is installed)
 pwd (print working directory)
 grep -w <word> * (search all files in directory for word)
-grep -r <word> * (recursively search all directories and subdirectories)
+grep -wr <word> * (recursively search all directories and subdirectories)
 chown user <filename> (change ownership of file)
-mv <oldfile.txt> <newfile.txt> (rename file) "
+mv <oldfile.txt> <newfile.txt> (rename file) 
 du -s -h <filename> (show the disk usage of a certain folder)
 chmod -R 777 <filename> (give all users permissions to make directories under that directory)
 dd if=/dev/zero of=/dev/sdX bs=1M #replace X with the target drive letter. (wipe a disk by filling it with zeros)
@@ -68,6 +68,8 @@ nvim <filename> (open file with neovim)
 :w <filename> (save with filename)
 :<lineNumber> (takes you to line)
 :PlugInstall (installs new plugin)
+Ctrl-w v (split screen vertically)
+Ctrl-w h (split screen horizontally)
 Ctrl-w <arrowKey> (switch panes)
 V (select line)
 v (select characters)
@@ -93,6 +95,7 @@ esc (go to command mode from insert mode)
 	p (paste)
 	shift ins (paste from clipboard into terminal)
 	:set nopaste (leave paste mode)
+:%s/<find>/<replace>/gc (find and replace all instances of a word)
 
 # Navigation
 
@@ -101,3 +104,4 @@ esc (go to command mode from insert mode)
 gt (go to right tab)
 gT (go to left tab)
 
+rbd snap create kubernets/AU.9.12.10.00.00.582.270@src
