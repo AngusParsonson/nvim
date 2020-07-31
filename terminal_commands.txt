@@ -54,6 +54,7 @@ cat /proc/mounts (show all mounts)
 <command> >> file.txt (appends result of command to a file)
 Ctrl-a (jump to start of line)
 sudo chmod -R 777 <directory> (give all permissions to all users for a directory)
+sudo ln -s /usr/bin/nodejs /usr/bin/node (create a symlink)
 ------------------------------------------------------
 
 # NEOVIM
@@ -85,11 +86,14 @@ P (paste on line above)
 d (cut selections)
 u (undo)
 Ctrl-R (redo)
+
 gg (go to top of file)
 G (go to EOF)
 0 (go to start of line)
+_ (go to first non-white space)
 $ (go to EOL)
 i (go to insert mode from command mode on current character)
+I (insert at first non-white space)
 a (go into insert mode after current character)
 A (go to end of line and enter insert mode)
 esc (go to command mode from insert mode)
@@ -113,3 +117,9 @@ esc (go to command mode from insert mode)
 :E (explore files in directory to open in vim)
 gt (go to right tab)
 gT (go to left tab)
+
+# Coc
+
+:CocConfig
+:CocInstall <coc-extenstion> (install coc extension)
+{coc-json, coc-prettier, coc-python, coc-snippets, coc-tsserver}
