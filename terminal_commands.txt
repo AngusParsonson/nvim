@@ -17,6 +17,7 @@ Ctrl+a % (split vertically)
 Ctrl+a arrowKey (move between screens)
 Ctrl+a : (enter tmux command prompt)
 Ctrl+a { (switch current pane with left pane, use } for right)
+exit (exits tmux, including exiting out of a pane)
 
 # Tmux copy mode
 
@@ -31,12 +32,13 @@ hold Ctrl-a <arrowKey> (resize current pane)
 
 # LINUX
 ------------------------------------------------------
+cd ~ (go to home dir)
 dpkg -L <packagename> (to find where package is installed)
 pwd (print working directory)
 grep -w <word> * (search all files in directory for word)
-grep -r <word> * (recursively search all directories and subdirectories)
+grep -wr <word> * (recursively search all directories and subdirectories)
 chown user <filename> (change ownership of file)
-mv <oldfile.txt> <newfile.txt> (rename file) "
+mv <oldfile.txt> <newfile.txt> (rename file) 
 du -s -h <filename> (show the disk usage of a certain folder)
 chmod -R 777 <filename> (give all users permissions to make directories under that directory)
 dd if=/dev/zero of=/dev/sdX bs=1M #replace X with the target drive letter. (wipe a disk by filling it with zeros)
@@ -47,7 +49,11 @@ rsync <srcDir> <dstDir> (syncs/copies files between directories)
 top (show running kernel processes, CPU concumption, general PC info etc.)
 df -h <mountPoint> (disk free shows disk usage and free space)
 ps aux | grep <command> (check if a command process is still running)
-
+cat /proc/mounts (show all mounts)
+<command> > file.txt (writes result of command to a file)
+<command> >> file.txt (appends result of command to a file)
+Ctrl-a (jump to start of line)
+sudo chmod -R 777 <directory> (give all permissions to all users for a directory)
 ------------------------------------------------------
 
 # NEOVIM
@@ -61,8 +67,16 @@ nvim <filename> (open file with neovim)
 :w (save file)
 :w <filename> (save with filename)
 :<lineNumber> (takes you to line)
+
+:source % 
 :PlugInstall (installs new plugin)
+
+:map (see all current key mappings)
+
+Ctrl-w v (split screen vertically)
+Ctrl-w h (split screen horizontally)
 Ctrl-w <arrowKey> (switch panes)
+
 V (select line)
 v (select characters)
 y (yank the selection)
@@ -75,8 +89,14 @@ gg (go to top of file)
 G (go to EOF)
 0 (go to start of line)
 $ (go to EOL)
-i (go to insert mode from command mode)
+i (go to insert mode from command mode on current character)
+a (go into insert mode after current character)
+A (go to end of line and enter insert mode)
 esc (go to command mode from insert mode)
+
+,c<space> (to comment out selected block or line)
+,cu (to uncomment selected block or line)
+
 >> (indent line or block)
 << (unindent line or block)
 /<keyword> (search for keyword in file, press enter and then n to go to next occurence)
@@ -85,6 +105,7 @@ esc (go to command mode from insert mode)
 	p (paste)
 	shift ins (paste from clipboard into terminal)
 	:set nopaste (leave paste mode)
+:%s/<find>/<replace>/gc (find and replace all instances of a word)
 
 # Navigation
 
