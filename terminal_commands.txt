@@ -71,6 +71,8 @@ nvim <filename> (open file with neovim)
 :source % 
 :PlugInstall (installs new plugin)
 
+:map (see all current key mappings)
+
 Ctrl-w v (split screen vertically)
 Ctrl-w h (split screen horizontally)
 Ctrl-w <arrowKey> (switch panes)
