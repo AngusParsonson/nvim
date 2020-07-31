@@ -67,10 +67,14 @@ nvim <filename> (open file with neovim)
 :w (save file)
 :w <filename> (save with filename)
 :<lineNumber> (takes you to line)
+
+:source % 
 :PlugInstall (installs new plugin)
+
 Ctrl-w v (split screen vertically)
 Ctrl-w h (split screen horizontally)
 Ctrl-w <arrowKey> (switch panes)
+
 V (select line)
 v (select characters)
 y (yank the selection)
@@ -87,6 +91,7 @@ i (go to insert mode from command mode on current character)
 a (go into insert mode after current character)
 A (go to end of line and enter insert mode)
 esc (go to command mode from insert mode)
+
 >> (indent line or block)
 << (unindent line or block)
 /<keyword> (search for keyword in file, press enter and then n to go to next occurence)
@@ -103,5 +108,3 @@ esc (go to command mode from insert mode)
 :E (explore files in directory to open in vim)
 gt (go to right tab)
 gT (go to left tab)
-
-rbd snap create kubernets/AU.9.12.10.00.00.582.270@src
