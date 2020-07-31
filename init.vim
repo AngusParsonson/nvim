@@ -7,6 +7,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'roxma/nvim-completion-manager'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdcommenter'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " GENERAL CONFIG
@@ -35,3 +37,4 @@ let g:mapleader=','         " sets mapleader key
 nnoremap <leader>h :split<cr>
 nnoremap <leader>v :vsplit<cr>
 xnoremap p pgvy             " allows for pasting multiple times
+nnoremap <C-p> :GFiles<CR>  " open any file quickly

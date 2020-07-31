@@ -80,6 +80,7 @@ Ctrl-w <arrowKey> (switch panes)
 
 V (select line)
 v (select characters)
+* (select all words that cursor is on)
 y (yank the selection)
 p (paste on line below)
 P (paste on line above)
@@ -117,6 +118,9 @@ esc (go to command mode from insert mode)
 :E (explore files in directory to open in vim)
 gt (go to right tab)
 gT (go to left tab)
+Ctrl-^ (jump back to the last file you were in)
+,gd (jump to definition)
+,gr (jump to references)
 
 # Coc
 
