@@ -1,8 +1,11 @@
+source ~/.config/nvim/plugged/coc.nvim/coc_conf.vim
+
 call plug#begin()
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'roxma/nvim-completion-manager'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdcommenter'
 call plug#end()
 
