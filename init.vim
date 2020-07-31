@@ -2,6 +2,8 @@ call plug#begin()
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'roxma/nvim-completion-manager'
+Plug 'preservim/nerdcommenter'
 call plug#end()
 
 " GENERAL CONFIG
