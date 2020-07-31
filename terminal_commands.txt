@@ -92,6 +92,9 @@ a (go into insert mode after current character)
 A (go to end of line and enter insert mode)
 esc (go to command mode from insert mode)
 
+,c<space> (to comment out selected block or line)
+,cu (to uncomment selected block or line)
+
 >> (indent line or block)
 << (unindent line or block)
 /<keyword> (search for keyword in file, press enter and then n to go to next occurence)
