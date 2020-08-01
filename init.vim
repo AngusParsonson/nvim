@@ -38,3 +38,12 @@ nnoremap <leader>h :split<cr>
 nnoremap <leader>v :vsplit<cr>
 xnoremap p pgvy             " allows for pasting multiple times
 nnoremap <C-p> :GFiles<CR>  " open any file quickly
+
+nnoremap <Up> <Nop>          " disable arrow keys
+nnoremap <Down> <Nop>
+nnoremap <Left> <Nop>
+nnoremap <Right> <Nop>
+inoremap  <Up>     <Nop>
+inoremap  <Down>   <Nop>
+inoremap  <Left>   <Nop>
+inoremap  <Right>  <Nop>

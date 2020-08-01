@@ -76,6 +76,7 @@ nvim <filename> (open file with neovim)
 Ctrl-w v (split screen vertically)
 Ctrl-w h (split screen horizontally)
 Ctrl-w <arrowKey> (switch panes)
+Ctrl-w o (close all panes except for the one you're in)
 
 V (select line)
 v (select characters)
@@ -119,16 +120,20 @@ Ctrl-O (jump to previous location)
 Ctrl-I (jump to next location)
 Ctrl-Y (move view pane up)
 Ctrl-E (move view pane down)
+{ (jump up to next empty line)
+} (jump down to next empty line)
 '. (jump to last modified line)
 G (go to EOF)
 0 (go to start of line)
 _ (go to first non-white space)
 $ (go to EOL)
+
 i (go to insert mode from command mode on current character)
 I (insert at first non-white space)
 a (go into insert mode after current character)
 A (go to end of line and enter insert mode)
-esc (go to command mode from insert mode)
+o (insert on new line below)
+O (insert on new line above)
 
 ,c<space> (to comment selected block or line)
 ,cs (to sexy comment selected block or line)
@@ -151,6 +156,11 @@ esc (go to command mode from insert mode)
 gt (go to right tab)
 gT (go to left tab)
 Ctrl-^ (jump back to the last file you were in)
+
+# Insert 
+
+Ctrl-n or <tab> (go to next item in autocomplete menu)
+Ctrl-p (go to previous item in autocomplete menu)
 
 # Coc
 
