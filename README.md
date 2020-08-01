@@ -14,4 +14,4 @@ Neovim configuration files.
 1. nvim ~/.config/nvim/init.vim
 2. :PlugInstall
 3. :CocConfig
-4. :CocInstall coc-json coc-python coc-prettier coc-pairs coc-tsserver
+4. :CocInstall coc-json coc-python coc-prettier coc-pairs coc-tsserver coc-snippets
