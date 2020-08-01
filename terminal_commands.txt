@@ -8,15 +8,19 @@ tmux list-window
 tmux move-pane -s 3:0
 
 tmux new -s <session_name> (create named session)
-Ctrl+a d (detach from session)
+Ctrl-b d (detach from session)
 tmux attach-session -t id/name
 tmux kill-session -t id/name
 
-Ctrl+a " (split horizontally)
-Ctrl+a % (split vertically)
-Ctrl+a arrowKey (move between screens)
-Ctrl+a : (enter tmux command prompt)
-Ctrl+a { (switch current pane with left pane, use } for right)
+Ctrl-b c (create new window)
+Ctrl-b n (go to next window)
+Ctrl-b p (go to previous window)
+
+Ctrl-b " (split horizontally)
+Ctrl-b % (split vertically)
+Ctrl-b arrowKey (move between screens)
+Ctrl-b : (enter tmux command prompt)
+Ctrl-b { (switch current pane with left pane, use } for right)
 exit (exits tmux, including exiting out of a pane)
 
 # Tmux copy mode
@@ -27,7 +31,7 @@ exit (exits tmux, including exiting out of a pane)
 # Tmux command prompt
 
 resize-pane -L/U/R/D <number> (resize current pane by a certain number of units)
-hold Ctrl-a <arrowKey> (resize current pane)
+hold Ctrl-b <arrowKey> (resize current pane)
 ------------------------------------------------------
 
 # LINUX
