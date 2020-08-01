@@ -31,6 +31,7 @@ syntax on 		            " syntax highlighting
 set pastetoggle=<F2>        " switch in and out of paste mode
 colorscheme gruvbox
 set background=dark
+set relativenumber
 
 " MAP LEADER CONFIG
 let g:mapleader=','         " sets mapleader key
