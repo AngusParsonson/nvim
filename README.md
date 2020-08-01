@@ -11,7 +11,7 @@ Neovim configuration files.
 4. Clone repository into ~/.config
 
 -- packages 
-1. nvim init.vim
+1. nvim ~/.config/nvim/init.vim
 2. :PlugInstall
 3. :CocConfig
 4. :CocInstall coc-json coc-python coc-prettier coc-pairs coc-tsserver
