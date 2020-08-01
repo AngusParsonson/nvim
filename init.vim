@@ -1,4 +1,4 @@
-source ~/.config/nvim/plugged/coc.nvim/coc_conf.vim
+source ~/.config/nvim/plugged/coc_conf.vim
 
 call plug#begin()
 Plug 'morhetz/gruvbox'
