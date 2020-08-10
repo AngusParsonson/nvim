@@ -4,7 +4,6 @@ call plug#begin()
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'roxma/nvim-completion-manager'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdcommenter'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -38,7 +37,7 @@ let g:mapleader=','         " sets mapleader key
 nnoremap <leader>h :split<cr>
 nnoremap <leader>v :vsplit<cr>
 xnoremap p pgvy             " allows for pasting multiple times
-nnoremap <C-p> :GFiles<CR>  " open any file quickly
+nnoremap <C-p> :GFiles<CR>  
 
 nnoremap <Up> <Nop>          " disable arrow keys
 nnoremap <Down> <Nop>
