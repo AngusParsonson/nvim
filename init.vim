@@ -34,11 +34,12 @@ set background=dark
 set relativenumber
 
 " MAP LEADER CONFIG
-let g:mapleader=','         " sets mapleader key
+nnoremap <SPACE> <Nop>
+let g:mapleader=' '         " sets mapleader key
 nnoremap <leader>h :split<cr>
 nnoremap <leader>v :vsplit<cr>
 xnoremap p pgvy             " allows for pasting multiple times
-nnoremap <C-p> :GFiles<CR>  " open any file quickly
+nnoremap <C-p> :GFiles<CR>  
 
 nnoremap <Up> <Nop>          " disable arrow keys
 nnoremap <Down> <Nop>
