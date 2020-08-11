@@ -33,7 +33,8 @@ set background=dark
 set relativenumber
 
 " MAP LEADER CONFIG
-let g:mapleader=','         " sets mapleader key
+nnoremap <SPACE> <Nop>
+let g:mapleader=' '         " sets mapleader key
 nnoremap <leader>h :split<cr>
 nnoremap <leader>v :vsplit<cr>
 xnoremap p pgvy             " allows for pasting multiple times

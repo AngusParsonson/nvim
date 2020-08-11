@@ -172,4 +172,4 @@ Ctrl-p (go to previous item in autocomplete menu)
 
 :CocConfig
 :CocInstall <coc-extenstion> (install coc extension)
-{coc-json, coc-prettier, coc-python, coc-snippets, coc-tsserver}
+{coc-json, coc-prettier, coc-python, coc-snippets, coc-tsserver, coc-pairs}
