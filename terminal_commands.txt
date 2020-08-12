@@ -69,7 +69,7 @@ rwx-rwx-rwx 1 owner:group
 -> The owner and the group
 
 chmod XXX <file/directory> (-R can be included to recursively change permissions of all files and subdirectories in directory)
--> r = 4, 2 = 2, x = 1
+-> r = 4, w = 2, x = 1
 -> e.g. chmod 777 <filename> (give all users rwx permissions)
 
 Special permissions:
