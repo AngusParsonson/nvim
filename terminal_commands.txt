@@ -59,6 +59,23 @@ cat /proc/mounts (show all mounts)
 Ctrl-a (jump to start of line)
 sudo chmod -R 777 <directory> (give all permissions to all users for a directory)
 sudo ln -s /usr/bin/nodejs /usr/bin/node (create a symlink)
+
+# File permissions
+
+ls -l <filename> shows permissions of a file 
+rwx-rwx-rwx 1 owner:group 
+-> Read/write/execute permissions for owner/group/all_users
+-> Number of hardlinks to the file 
+-> The owner and the group
+
+chmod XXX <file/directory> (-R can be included to recursively change permissions of all files and subdirectories in directory)
+-> r = 4, 2 = 2, x = 1
+-> e.g. chmod 777 <filename> (give all users rwx permissions)
+
+Special permissions:
+s - setuid/setgid permissions, runs an executable as the owner with the owner's permissions
+chmod g+s <filename> (give setuid flag to a file)
+-> e.g. "-rwsr-xr-x 1 root:users" means every user will execute this file as root
 ------------------------------------------------------
 
 # NEOVIM
