@@ -185,6 +185,14 @@ Ctrl-^ (jump back to the last file you were in)
 Ctrl-n or <tab> (go to next item in autocomplete menu)
 Ctrl-p (go to previous item in autocomplete menu)
 
+# Macros
+
+q<character> (start recording macro to be assigned to chosen character)
+-> Type any sequence of actions
+q (stop recording)
+@<character> (perform macro assigned to character)
+<num>@<character> (perform macro assigned to character num times)
+
 # Coc
 
 :CocConfig
