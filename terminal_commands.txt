@@ -199,3 +199,12 @@ q (stop recording)
 :CocConfig
 :CocInstall <coc-extenstion> (install coc extension)
 {coc-json, coc-prettier, coc-python, coc-snippets, coc-tsserver, coc-pairs}
+------------------------------------------------------
+
+# NEOVIM
+------------------------------------------------------
+# Git Ignore
+
+Add filename or pattern to newline in .gitignore (ignore a file or filetype)
+git reset <filename> (untrack a file and keep it)
+git rm --cached <filename> (remove a given file from the repository)
