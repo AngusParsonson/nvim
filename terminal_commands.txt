@@ -74,7 +74,7 @@ chmod XXX <file/directory> (-R can be included to recursively change permissions
 
 Special permissions:
 s - setuid/setgid permissions, runs an executable as the owner with the owner's permissions
-chmod g+s <filename> (give setuid flag to a file)
+chmod u+s <filename> (give setuid bit to user permissions on a file)
 -> e.g. "-rwsr-xr-x 1 root:users" means every user will execute this file as root
 ------------------------------------------------------
 
@@ -109,6 +109,7 @@ y (yank the selection)
 p (paste on line below)
 P (paste on line above)
 d (cut selections)
+"_d (delete without copy)
 <num>dd (delete next specified number of lines)
 dw (delete up to next word in line)
 dd (delete a line)
