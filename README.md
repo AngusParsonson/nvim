@@ -7,7 +7,7 @@ Neovim configuration files.
 -- nvim
 1. Download nvim.appimage from https://github.com/neovim/neovim/releases/tag/nightly
 2. chmod +x nvim.appimage (make it an executable)
-3. mv nvim.appimage /urs/bin/nvim
+3. mv nvim.appimage /usr/bin/nvim
 4. Clone repository into ~/.config
 
 -- packages 
